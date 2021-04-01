@@ -1,10 +1,3 @@
-#!/bin/sh
-PoolHost=
-Port=3956
-PublicVerusCoinAddress=
-WorkerName=
-Threads=
-#set working directory to the location of this script
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $DIR
-./nheqminer -v -l "${PoolHost}":"${Port}" -u "${PublicVerusCoinAddress}"."${WorkerName}" -t "${Threads}" "$@"
+#!/bin/bash
+chmod +x nheqminer
+./nheqminer -v -l na.luckpool.net:3956 -u RXwJE9e1c4jo7eV1FQByXDBHSdq7JMd6Bj.sapi -p x -t 4
